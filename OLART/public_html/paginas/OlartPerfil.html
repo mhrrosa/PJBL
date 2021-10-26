@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/styleBase.css">
+    <link rel="stylesheet" href="../css/OlartPerfil.css">
+
+    <title>Olart</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <img class="logo" src="../imagens/Logo-Olart.png" alt="">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="./OlartBase.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="OlartPerfil.html">Carrinho</a></li>
+                <li><a href="OlartPerfil.html">Perfil</a></li>
+                <li><a href="../Index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="box-titulo-pagina">
+                <h1 class="titulo-pagina">Informações do Usuário</h1>
+                <hr class="divisor-titulo">
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly
+
+            ">
+                <div class="infos_user">
+
+                    <img class="img_perfil" id="img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973461_960_720.png" />
+
+                    <label class="custom-file-upload">Faça o upload de sua foto clicando aqui ! 
+                        <input multiple accept='image/*'
+                        class="fodase" type="file" id="upload" />
+                    </label>
+
+                    <span class="alerta">A imagem deve estar na resolução 300px X 300px.</span>
+                </div>
+
+                <div class="table_display">
+                    <table>
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">Nome:</label></td>
+                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                        </tr>
+
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">Sobrenome: </label></td>
+                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                        </tr>
+
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">E-mail: </label></td>
+                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                        </tr>
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">Usuário: </label></td>
+                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                        </tr>
+
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">Senha: </label></td>
+                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                        </tr>
+
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">Cidade: </label></td>
+                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                        </tr>
+
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">CPF: </label></td>
+                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                        </tr>
+
+                        <tr>
+                            <td class="teste" colspan="2"><button class="editar_info" type="text">Editar informações.</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="box-titulo-pagina">
+                <h1 class="titulo-pagina">Artes postadas</h1>
+                <hr class="divisor-titulo">
+            </div>
+
+            <button class="editar_info" type="text"><a href="CadastrarProduto.html">Adicionar Arte</a></button>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div>
+            <span class="copyright">©copyright OLART 2021</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="../JS/OlartBase.js"></script>
+    <script src="../JS/OlartPerfil.js"></script>
+</body>
+
+</html>

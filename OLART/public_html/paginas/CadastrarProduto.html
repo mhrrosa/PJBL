@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/styleBase.css">
+    <link rel="stylesheet" href="../css/styleCadastro.css">
+
+    <title>Olart</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <img class="logo" src="../imagens/Logo-Olart.png" alt="">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="./OlartBase.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="OlartPerfil.html">Carrinho</a></li>
+                <li><a href="OlartPerfil.html">Perfil</a></li>
+                <li><a href="../Index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <form>
+            <div class="all">
+                <div class="display-dados">
+                    <div class="dados-produto">
+
+                        <hr>
+                        <h1 class="titulo">Informações do Produto</h1>
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td><label class="title">Nome da arte</label></td>
+                                <td><input required placeholder="Ex. O Grito" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;"><label class="title">Descrição</label></td>
+                                <td><textarea maxlength="220"></textarea></td>
+                            </tr>
+
+                            <tr>
+                                <td><label class="title">Preço</label></td>
+                                <td><input required placeholder="Ex. 1000" type="number"></td>
+                            </tr>
+
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <label class="title">Adicionar imagens<br></label>
+                                    <span>Faça o upload de até 3 imagens nos formatos JPEG ou PNG.</span>
+                                </td>
+                                <td><img class=" imgUpload " src="../imagens/imgUpload.png "></td>
+                            </tr>
+
+
+                            <tr>
+                                <td><label class="title">Estado</label></td>
+                                <td><select id="estado" name="estado">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select></td>
+                            </tr>
+
+                            <tr>
+                                <td><label class="title">Cidade</label></td>
+                                <td><input required placeholder="Ex. Curitiba" type="text"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label class="title">CEP</label></td>
+                                <td><input required maxlength="4" placeholder="Ex. 888888888" type="number"></td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+
+                    <div class="dados-contato">
+                        <hr>
+                        <h1 class="titulo">Informações para contato</h1>
+                        <hr>
+
+
+                        <table>
+                            <tr>
+                                <td><label class="title">Nome</label></td>
+                                <td><input maxlength="35" required type="text"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label class="title">E-mail</label></td>
+                                <td><input maxlength="38" required placeholder="Ex. user@hotmail.com" type="email"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label class="title">Telefone</label></td>
+                                <td><input maxlength="11" placeholder="Ex. (42) 9 9999-9999" required type="number"></td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <button class="botaoMaiorAzul">Publicar</button>
+        </form>
+    </main>
+
+
+
+    <footer>
+        <div>
+            <span>©copyright OLART 2021</span>
+        </div>
+    </footer>
+    <script src="../JS/OlartBase.js "></script>
+
+</body>
+
+</html>
