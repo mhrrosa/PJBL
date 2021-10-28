@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="../css/styleBase.css">
     <link rel="stylesheet" href="../css/styleCadastro.css">
-
+    <script type="text/javascript" src="../JS/CadastrarProduto.js"></script>
     <title>Olart</title>
 </head>
 
@@ -44,16 +44,16 @@
                         <table>
                             <tr>
                                 <td><label class="title">Nome da arte</label></td>
-                                <td><input required placeholder="Ex. O Grito" type="text"></td>
+                                <td><input required placeholder="Ex. O Grito" type="text" id="inputTitle"></td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;"><label class="title">Descrição</label></td>
-                                <td><textarea maxlength="220"></textarea></td>
+                                <td><textarea maxlength="220" id="textareaDescricao"></textarea></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">Preço</label></td>
-                                <td><input required placeholder="Ex. 1000" type="number"></td>
+                                <td><input required placeholder="Ex. 1000" type="number" id="inputPreco"></td>
                             </tr>
 
                             <tr>
@@ -61,13 +61,14 @@
                                     <label class="title">Adicionar imagens<br></label>
                                     <span>Faça o upload de até 3 imagens nos formatos JPEG ou PNG.</span>
                                 </td>
-                                <td><img class=" imgUpload " src="../imagens/imgUpload.png "></td>
+                                <td><img class=" imgUpload " src="../imagens/imgUpload.png "><input multiple accept='image/*'
+                                     class="fodase" type="file" id="upload" /></td>
                             </tr>
 
 
                             <tr>
                                 <td><label class="title">Estado</label></td>
-                                <td><select id="estado" name="estado">
+                                <td><select id="selectEstado" name="estado">
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -101,12 +102,12 @@
 
                             <tr>
                                 <td><label class="title">Cidade</label></td>
-                                <td><input required placeholder="Ex. Curitiba" type="text"></td>
+                                <td><input required placeholder="Ex. Curitiba" type="text" id="inputCidade"></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">CEP</label></td>
-                                <td><input required maxlength="4" placeholder="Ex. 888888888" type="number"></td>
+                                <td><input required maxlength="4" placeholder="Ex. 888888888" type="number" id="inputCep"></td>
                             </tr>
 
 
@@ -122,17 +123,17 @@
                         <table>
                             <tr>
                                 <td><label class="title">Nome</label></td>
-                                <td><input maxlength="35" required type="text"></td>
+                                <td><input maxlength="35" required type="text" id="inputNomectt"></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">E-mail</label></td>
-                                <td><input maxlength="38" required placeholder="Ex. user@hotmail.com" type="email"></td>
+                                <td><input maxlength="38" required placeholder="Ex. user@hotmail.com" type="email" id="inputEmailctt"></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">Telefone</label></td>
-                                <td><input maxlength="11" placeholder="Ex. (42) 9 9999-9999" required type="number"></td>
+                                <td><input maxlength="11" placeholder="Ex. (42) 9 9999-9999" required type="number" id="inputTelefonectt"></td>
                             </tr>
 
 
@@ -141,7 +142,7 @@
                 </div>
 
             </div>
-            <button class="botaoMaiorAzul">Publicar</button>
+            <button class="botaoMaiorAzul" onclick="cadastrar()">Publicar</button>
         </form>
     </main>
 
