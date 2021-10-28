@@ -1,0 +1,63 @@
+/* ========================= DIV INFO 1 ========================= */
+
+.sobre-cabecalho {
+    width: 100%;
+    height: 200px;
+    background: url(../imagens/Cabecalho-sobre.png);
+    margin: 0;
+    padding: 0;
+    background-position: center;
+}
+
+.sobre-cabecalho h2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 70px;
+    color: #fff;
+    text-shadow: #0000000c 0px 0px 25px;
+}
+
+
+/* ========================= Divisor-Amarelo ========================= */
+
+.divisor-amarelo {
+    width: 200px;
+    border: 2px solid #ffd523;
+    border-radius: 10px;
+}
+
+
+/* ========================= Card-Comprar ========================= */
+
+.cards {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.box-esquerda {
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.box-direita {
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.box-esquerda:hover {
+    transform: scale(1.02);
+}
+
+.box-direita:hover {
+    transform: scale(1.02);
+}

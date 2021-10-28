@@ -1,0 +1,178 @@
+/* ====================== CARDS ===================== */
+
+.card-alinhar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-externo {
+    height: 250px;
+    margin: 10px;
+}
+
+.card-interno {
+    display: flex;
+    width: 450px;
+    height: 170px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+}
+
+.imagens {
+    display: flex;
+    align-items: center;
+    border-radius: 15px 0px 0px 15px;
+    width: 200px;
+    height: 25px;
+    background-color: aquamarine;
+}
+
+.infos {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo-arte {
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
+    color: #2C2E43;
+    font-size: 20px;
+}
+
+.descricao-titulo {
+    margin: 0;
+    color: #2C2E43;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.descricao-card {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #2f2f2f;
+    line-height: 15px;
+    font-size: 12px;
+    width: 270px;
+    word-wrap: break-word;
+}
+
+.preco {
+    color: #2C2E43;
+    font-size: 20px
+}
+
+.separador-card {
+    opacity: 100;
+    border: solid 1px #FFD523;
+    width: 220px;
+    border-radius: 50px;
+    margin: 0;
+}
+
+.box-adicionar-carrinho {
+    display: flex;
+    height: 40px;
+    margin-top: 5px;
+    justify-content: end;
+}
+
+.adicionar-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    font-weight: bold;
+    background-color: #2C2E43;
+    color: white;
+    font-size: 15px;
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #2c2e43cc;
+    cursor: pointer;
+}
+
+.deletar-arte {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    font-weight: bold;
+    background-color: #2C2E43;
+    color: #f44336;
+    font-size: 15px;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.deletar-arte:hover {
+    background-color: #2c2e43cc;
+    cursor: pointer;
+}
+
+.salvar-botao {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+    background-color: #2C2E43;
+    color: whitesmoke;
+    font-size: 15px;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.salvar-botao:hover {
+    background-color: #2c2e43cc;
+    cursor: pointer;
+}
+
+.box-descricao {
+    height: 115px;
+}
+
+.carrinho {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 25px;
+}
+
+.x-img {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 25px;
+}
+
+
+/* ==================== Estilos Base ====================*/
+
+.cards-gerar {
+    max-width: 1100px;
+    min-width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+main {
+    max-width: 1200px;
+    min-width: 310px;
+}

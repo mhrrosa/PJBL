@@ -1,0 +1,89 @@
+    body {
+        font-family: sans-serif;
+    }
+    
+    .card_index {
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        margin: auto;
+        padding: 14px;
+        width: 350px;
+        background-color: white;
+        font-family: Arial;
+    }
+    
+    .img_index {
+        width: 200px;
+        border: 0;
+        margin: auto;
+        display: block;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    input {
+        width: 310px;
+        height: 35px;
+        border: 1px solid #ccc;
+        outline-color: #ced4da;
+        color: #636464
+    }
+    
+    input::placeholder {
+        padding-left: 10px;
+        color: #d1d2d4;
+        font-size: 14px;
+    }
+    
+    input:focus {
+        background-color: rgb(232, 240, 254) !important;
+        ;
+        padding-left: 10px;
+    }
+    
+    .button_entrar {
+        margin: auto;
+        width: 312px;
+        border-radius: 2px;
+        color: white;
+        background-color: #ffca2c;
+        border: 1px;
+    }
+    
+    .button_entrar:hover {
+        background-color: #f6eb00;
+    }
+    
+    hr {
+        width: 308px;
+    }
+    
+    .button_cadastro {
+        margin: auto;
+        width: 312px;
+        border-radius: 2px;
+        color: white;
+        background-color: #07104d;
+        border: 1px;
+    }
+    
+    .button_cadastro:hover {
+        background-color: #2d3681;
+    }
+    
+    .rodape_index {
+        background-color: white;
+        height: 100px;
+        font-family: Arial;
+    }
+    
+    .centralizar-cadastro {
+        margin-top: 180px;
+    }
+    
+    .titulo {
+        color: #2C2E43;
+        font-weight: bold;
+    }
