@@ -1,25 +1,24 @@
-function atualizar(){
+function atualizar() {
     src = "";
     dados = JSON.parse(window.localStorage.getItem("dados_produtos"));
-    for (var i = 0; i < dados.length;i++){
+    for (var i = 0; i < dados.length; i++) {
         src = dados[i][3];
-        document.getElementById("teste").innerHTML += "<div class=cards-gerar id=cards-gerar>\n\
-                    <div class=card-alinhar>\n\
+        document.getElementById("teste").innerHTML += "<div class=card-alinhar>\n\
                       <div class=card-externo>\n\
                        <div class=card-externo>\n\
                         <div class=card-interno>\n\
                           <div>\n\
-                               <img src="+"../imagens/"+src+" id=imagem1/>\n\
+                               <img class=img-cadastro src=" + "../imagens/" + src + " id=imagem1/>\n\
                            </div>\n\
                             <div class=infos>\n\
-                                <h2 class=titulo-arte id=ti>"+dados[i][0]+"</h2>\n\
+                                <h2 class=titulo-arte id=ti>" + dados[i][0] + "</h2>\n\
                                 <hr class=separador-card>\n\
                                 <h2 class=descricao-titulo>Sobre</h2>\n\
                             <div class=box-descricao>\n\
-                                <p class=descricao-card>"+dados[i][1]+"\n\
+                                <p class=descricao-card>" + dados[i][1] + "\n\
                                 </p>\n\
                             </div>\n\
-                            <h2 class=preco>"+"R$ "+dados[i][2]+"</h2>\n\
+                            <h2 class=preco>" + "R$ " + dados[i][2] + "</h2>\n\
                          </div>\n\
                         </div>\n\
                          <div class=box-adicionar-carrinho>\n\
@@ -30,13 +29,11 @@ function atualizar(){
                     </div>\n\
                         ";
 
-             
+
         console.log(src);
     }
-             
+
 }
-window.onload = function(){
+window.onload = function() {
     atualizar();
 }
-
-

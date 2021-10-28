@@ -1,26 +1,25 @@
-
 /* global usuarios */
 
 usuarios = [];
 
-function cadastrar(){
+function cadastrar() {
     aux = [];
     var nomeProduto = document.getElementById("inputTitle").value;
     var descricao = document.getElementById("textareaDescricao").value;
     var preco = document.getElementById("inputPreco").value;
-    var imagem = document.getElementById("upload").files[0].name; 
+    var imagem = document.getElementById("upload").files[0].name;
     var estado = document.getElementById("selectEstado").value;
     var cidade = document.getElementById("inputCidade").value;
     var cep = document.getElementById("inputCep").value;
     var nomectt = document.getElementById("inputNomectt").value;
     var emailctt = document.getElementById("inputEmailctt").value;
     var telefonectt = document.getElementById("inputTelefonectt").value;
-    
-    
 
 
 
-    
+
+
+
     aux.push(nomeProduto);
     aux.push(descricao);
     aux.push(preco);
@@ -31,10 +30,9 @@ function cadastrar(){
     aux.push(nomectt);
     aux.push(emailctt);
     aux.push(telefonectt);
-    
+
     usuarios.push(aux);
-    window.localStorage.setItem("dados_produtos",JSON.stringify(usuarios));
-    document.getElementById("inputTitle").value = "";
-    document.getElementById("textareaDescricao").value = "";
+    window.localStorage.setItem("dados_produtos", JSON.stringify(usuarios));
+
     return usuarios;
 }
