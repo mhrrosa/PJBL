@@ -26,6 +26,7 @@
 .display-dados {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .all input {
