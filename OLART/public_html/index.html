@@ -14,6 +14,7 @@ and open the template in the editor.
     <link rel="stylesheet" href="css/styleBase.css">
     <link rel="stylesheet" href="css/estilo_index.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="JS/VerificaLoginUsuario.js"></script>
 </head>
 
 
@@ -44,13 +45,13 @@ and open the template in the editor.
                 <div class="center">
                     <label class="titulo">Login</label>
                 </div>
-                <input type="text" placeholder="Usuario" style="font-size:13px;margin-top: 10px;margin-left: 10px">
-                <input type="text" placeholder="Senha" style="font-size:13px;margin-top: 10px ;margin-left: 10px;">
+                <input id="inputUsuario" type="text" placeholder="Usuario" style="font-size:13px;margin-top: 10px;margin-left: 10px">
+                <input id="inputSenha"type="text" placeholder="Senha" style="font-size:13px;margin-top: 10px ;margin-left: 10px;">
                 <div class="center">
-                    <a href="paginas\home.html"> <button style="margin-left: 7px;margin-top: 10px;border-radius: 2px;" class="button_entrar" href="home.html">Entrar</button> </a>
+                    <a> <button style="margin-left: 7px;margin-top: 10px;border-radius: 2px;" class="button_entrar" onclick="VerificaLogin()">Entrar</button> </a>
                 </div>
                 <hr style="margin-left:10px;">
-                <a href="cadastro.html"> <button style="margin-left: 7px;margin-top: 0px;border-radius: 2px;" class="button_cadastro" href="home.html">Criar nova conta</button> </a>
+                <a href="paginas/CadastrarUsuario.html"> <button style="margin-left: 7px;margin-top: 0px;border-radius: 2px;" class="button_cadastro" >Criar nova conta</button> </a>
             </div>
         </div>
 
