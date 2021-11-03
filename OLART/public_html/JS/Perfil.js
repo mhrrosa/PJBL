@@ -55,6 +55,11 @@ function inserirValores(){
             }
         }
 }
+
+function atualizarDados(){
+        var imagem = document.getElementById("upload").files[0].name;
+    window.localStorage.setItem("dados_produtos", JSON.stringify(imagem));
+}
 window.onload = function() {
     atualizar();
     inserirValores();
