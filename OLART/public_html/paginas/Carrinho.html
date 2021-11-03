@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/stylecards.css">
+    <link rel="stylesheet" href="../css/styleBase.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/stylesCarrinho.css">
+
+
+    <title>Carrinho de Compras da OLART</title>
+</head>
+
+<body>
+    <header id="header">
+        <img class="logo" src="../imagens/Logo-Olart.png" alt="">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
+                <li><a href="OlartPerfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="box-titulo-pagina">
+            <h1 class="titulo-pagina">Carrinho</h1>
+            <hr class="divisor-titulo">
+        </div>
+
+        <div class="cards-gerar" id="cards-gerar">
+            <div class="card-alinhar">
+                <div class="card-externo">
+                    <div class="card-interno">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <img class="img-cadastro" src="../imagens/teste.jpg" alt="">
+                        </div>
+
+                        <div class="infos" id="id_infos">
+                            <h2 class="titulo-arte">dados[i][0]</h2>
+                            <hr class="separador-card">
+
+                            <h2 class="descricao-titulo">Sobre</h2>
+
+                            <div class="box-descricao">
+                                <p class="descricao-card">A arte é uma representação
+                                </p>
+                            </div>
+
+                            <h2 class="preco">R$ 1.000</h2>
+                        </div>
+                    </div>
+
+                    <div class="box-adicionar-carrinho">
+                    </div>
+                </div>
+            </div>
+            <div class="card-alinhar">
+                <div class="card-externo">
+                    <div class="card-interno">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <img class="img-cadastro" src="../imagens/teste.jpg" alt="">
+                        </div>
+
+                        <div class="infos" id="id_infos">
+                            <h2 class="titulo-arte">dados[i][0]</h2>
+                            <hr class="separador-card">
+
+                            <h2 class="descricao-titulo">Sobre</h2>
+
+                            <div class="box-descricao">
+                                <p class="descricao-card">A arte é uma representação
+                                </p>
+                            </div>
+
+                            <h2 class="preco">R$ 1.000</h2>
+                        </div>
+                    </div>
+
+                    <div class="box-adicionar-carrinho">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="total-externo">
+            <div class="total-interno">
+                <p class="valor-total">Total:</p>
+                <p class="soma-total">R$ "Somar o valor"</p>
+            </div>
+
+        </div>
+
+        <div class="box-titulo-pagina">
+            <h1 class="titulo-pagina">Selecione a forma de pagamento</h1>
+            <hr class="divisor-titulo">
+        </div>
+
+        <div class="box-pagamento">
+
+            <button onclick="pix()" class="botao-pagamento"><img class="img-forma-pagamento" src="../imagens/pix-logo.png" alt="">
+                        PIX</button>
+
+            <button onclick="boleto()" class="botao-pagamento"><img class="img-forma-pagamento" src="../imagens/codigoBarra.png" alt="">
+                        Boleto</button>
+
+            <button onclick="cartao()" class="botao-pagamento"><img class="img-forma-pagamento" src="../imagens/cartaoCreditoDebito2.png" alt="">
+                        Cartão de Crédito</button>
+            </tr>
+            </table>
+        </div>
+
+        <div style="display: none;" id="pix" class="box-pix">
+            <p class="aviso-pix">Pague com Pix em qualquer dia e a qualquer hora! O pagamento é instantâneo, prático e pode ser feito em poucos segundos. É muito rápido e seguro :)</p>
+            <div class="qrCode-dica">
+                <img style="width: 200px; height: 200px; margin-right: 20px;" class="teste" src="../imagens/qrCode.png" alt="">
+                <div style="display: flex; flex-direction: column; width: 240px; height: 200px; justify-content: center;justify-content: space-around">
+                    <p>1. abra o app do seu banco ou instituição financeira e entre no ambiente Pix</p>
+                    <p>2. escolha a opção pagar com qr code e escaneie o código ao lado</p>
+                    <p>3. confirme as informações e finalize a compra</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="cartao" class="box-cartao">
+            <div class="box-cartao-externa">
+                <form>
+                    <label for="numero" class="aviso-cartao">Número do cartão</label>
+                    <input name="numero" class="input-cartao" type="number">
+
+                    <label class="aviso-cartao">Nome completo</label>
+                    <span class="aviso-cartao2">como está impresso no cartão</span>
+                    <input class="input-cartao" type="number">
+
+                    <label class="aviso-cartao">Validade</label>
+                    <input class="input-cartao-menor" type="number">
+
+                    <label class="aviso-cartao">Código de segurança</label>
+                    <input class="input-cartao-menor" type="number">
+
+                    <a class="botao-comprar" href="../paginas/home.html">Finalizar Compra</a>
+
+                </form>
+            </div>
+        </div>
+
+
+        <div style="display: none;" id="boleto" class="box-boleto">
+            <div class="aviso-boleto">
+                <div class="avisos-boleto">
+                    <img class="img-aviso" src="../imagens/impressora.png" alt="">
+                    <p>Imprima o boleto e pague no banco
+                    </p>
+                </div>
+
+                <div class="avisos-boleto">
+                    <img class="img-aviso" src="../imagens/computador.png" alt="">
+                    <p>ou pague pela internet utilizando o código de barras do boleto
+                    </p>
+                </div>
+
+                <div class="avisos-boleto">
+                    <img class="img-aviso" src="../imagens/calendario.png" alt="">
+                    <p>o prazo de validade do boleto é de 1 dia util
+                    </p>
+                </div>
+
+            </div>
+
+            <a class="botao-comprar" href="../paginas/home.html">Fechar pedido</a>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div>
+            <span>©copyright OLART 2021</span>
+        </div>
+    </footer>
+    <script src="../JS/OlartBase.js "></script>
+    <script src="../JS/carrinho.js"></script>
+</body>
+
+</html>
