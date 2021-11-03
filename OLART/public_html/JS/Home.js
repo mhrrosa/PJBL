@@ -1,10 +1,10 @@
+
 function atualizar() {
     src = "";
     dados = JSON.parse(window.localStorage.getItem("dados_produtos"));
     for (var i = 0; i < dados.length; i++) {
         src = dados[i][3];
-        document.getElementById("teste").innerHTML += "<div class=card-alinhar>\n\
-                      <div class=card-externo>\n\
+        document.getElementById("teste").innerHTML += "<div class=card-externo id="+i+">\n\
                        <div class=card-externo>\n\
                         <div class=card-interno>\n\
                           <div>\n\
@@ -21,19 +21,26 @@ function atualizar() {
                             <h2 class=preco>" + "R$ " + dados[i][2] + "</h2>\n\
                          </div>\n\
                         </div>\n\
-                         <div class=box-adicionar-carrinho>\n\
-                        <button class=adicionar-carrinho>\n\
-                            <img class=carrinho src=../imagens/carrinho.png>\n\
-                                Adicionar ao carrinho\n\
-                        </button>\n\
+                            <div id=produtoid class=box-adicionar-carrinho>\n\
+                                <button id="+i+" class=adicionar-carrinho>\n\
+                                    <img class=carrinho src=../imagens/carrinho.png>\n\
+                                        Adicionar ao carrinho\n\
+                                </button>\n\
                     </div>\n\
+                </div>\n\
+            </div>\n\
+        </div>\n\
                         ";
-
-
-        console.log(src);
+        console.log(i);
     }
-
+VerificaId();
 }
+function VerificaId(){
+   $("#produtoid").find("button").click(function(){
+      console.log($(this).attr("id"));
+   });
+};
+
 window.onload = function() {
     atualizar();
-}
+};
