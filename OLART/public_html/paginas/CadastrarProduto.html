@@ -33,19 +33,12 @@
             <div class="all">
                 <div class="display-dados">
                     <div class="dados-produto">
-<<<<<<< HEAD
-
                         <div class="box-titulo-pagina">
                             <hr class="divisor-titulo">
                             <h1 class="titulo">Informações do Produto</h1>
                             <hr class="divisor-titulo">
                         </div>
 
-=======
-                        <hr>
-                        <h1 class="titulo">Informações do Produto</h1>
-                        <hr>
->>>>>>> branch-matheusjs
                         <table>
                             <tr>
                                 <td><label class="title">Nome da arte</label></td>
@@ -59,7 +52,7 @@
 
                             <tr>
                                 <td><label class="title">Preço</label></td>
-                                <td><input required placeholder="Ex. 1000" type="number" id="inputPreco"value="4545"></td>
+                                <td><input required placeholder="Ex. 1000" type="number" id="inputPreco" value="4545"></td>
                             </tr>
 
                             <tr>
@@ -67,7 +60,13 @@
                                     <label class="title">Adicionar imagens<br></label>
                                     <span>Faça o upload de até 3 imagens nos formatos JPEG ou PNG.</span>
                                 </td>
-                                <td><img class=" imgUpload " src="../imagens/imgUpload.png "><input multiple accept='image/*' class="fodase" type="file" id="upload" /></td>
+                                <td><img class=" imgUpload " src="../imagens/imgUpload.png ">
+
+                                    <label class="custom-file-upload">Faça o upload de sua foto clicando aqui ! 
+                                        <input multiple accept='image/*'
+                                        class="fodase" type="file" id="upload" />
+                                    </label>
+                                </td>
                             </tr>
 
 
@@ -107,12 +106,12 @@
 
                             <tr>
                                 <td><label class="title">Cidade</label></td>
-                                <td><input required placeholder="Ex. Curitiba" type="text" id="inputCidade"value="curitiba"></td>
+                                <td><input required placeholder="Ex. Curitiba" type="text" id="inputCidade" value="curitiba"></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">CEP</label></td>
-                                <td><input required maxlength="4" placeholder="Ex. 888888888" type="number" id="inputCep"value="45454"></td>
+                                <td><input required maxlength="4" placeholder="Ex. 888888888" type="number" id="inputCep" value="45454"></td>
                             </tr>
 
 
@@ -130,17 +129,17 @@
                         <table>
                             <tr>
                                 <td><label class="title">Nome</label></td>
-                                <td><input maxlength="35" required type="text" id="inputNomectt"value="matheus"></td>
+                                <td><input maxlength="35" required type="text" id="inputNomectt" value="matheus"></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">E-mail</label></td>
-                                <td><input maxlength="38" required placeholder="Ex. user@hotmail.com" type="email" id="inputEmailctt"value="email@email"></td>
+                                <td><input maxlength="38" required placeholder="Ex. user@hotmail.com" type="email" id="inputEmailctt" value="email@email"></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">Telefone</label></td>
-                                <td><input maxlength="11" placeholder="Ex. (42) 9 9999-9999" required type="number" id="inputTelefonectt"value="251661"></td>
+                                <td><input maxlength="11" placeholder="Ex. (42) 9 9999-9999" required type="number" id="inputTelefonectt" value="251661"></td>
                             </tr>
 
 
@@ -149,11 +148,9 @@
                 </div>
 
             </div>
-            <button class="botaoMaiorAzul" href="./paginas/home.html"onclick="cadastrar()">Publicar</button>
+            <button class="botaoMaiorAzul" href="./paginas/home.html" onclick="cadastrar()">Publicar</button>
         </form>
     </main>
-
-    <button onclick="teste()">teste</button>
 
     <footer>
         <div>
