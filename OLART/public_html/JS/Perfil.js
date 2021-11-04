@@ -40,13 +40,13 @@ function inserirValores(){
      for (var i = 0; i < dados.length; i++) {
             if (dados[i][4] == usuarioLogado[0][0]){
                 console.log('entrou');
-                document.getElementById("labelNome").innerHTML = dados[i][0];
-                document.getElementById("labelSobrenome").innerHTML = dados[i][1];
-                document.getElementById("labelEmail").innerHTML = dados[i][2];
-                document.getElementById("labelUsuario").innerHTML = dados[i][4];
-                document.getElementById("labelSenha").innerHTML = dados[i][5];
-                document.getElementById("labelCidade").innerHTML = dados[i][6];
-                document.getElementById("labelCpf").innerHTML = dados[i][8];
+                document.getElementById("input-name").value = dados[i][0];
+                document.getElementById("input-sobrenome").value = dados[i][1];
+                document.getElementById("input-email").value = dados[i][2];
+                document.getElementById("input-usuario").value = dados[i][4];
+                document.getElementById("input-senha").value = dados[i][5];
+                document.getElementById("input-cidade").value = dados[i][6];
+                document.getElementById("input-cpf").value = dados[i][8];
                 
                 
             }
