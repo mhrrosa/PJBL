@@ -85,10 +85,20 @@ td {
 .titulo_td {
     width: fit-content;
     text-align: end;
+    vertical-align: middle;
 }
 
 .sobre_td {
     width: 400px;
+    vertical-align: middle;
+}
+
+.input-editar {
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: solid #2f2f2f 1px;
+    padding: 5px;
 }
 
 .titulo {
@@ -111,4 +121,8 @@ td {
 .editar_info:hover {
     background-color: #2c2e43cc;
     cursor: pointer;
+}
+
+input:focus {
+    outline: none;
 }
