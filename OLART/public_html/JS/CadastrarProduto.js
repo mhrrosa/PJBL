@@ -5,7 +5,7 @@ produtos = [];
 function cadastrar() {
     aux = [];
     usuarioLogado = JSON.parse(window.localStorage.getItem("usuarioLogado"));
-    
+
     var nomeProduto = document.getElementById("inputTitle").value;
     var descricao = document.getElementById("textareaDescricao").value;
     var preco = document.getElementById("inputPreco").value;
@@ -18,7 +18,7 @@ function cadastrar() {
     var telefonectt = document.getElementById("inputTelefonectt").value;
 
 
-    
+
     aux.push(nomeProduto);
     aux.push(descricao);
     aux.push(preco);
