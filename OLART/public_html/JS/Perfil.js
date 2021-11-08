@@ -7,7 +7,7 @@ function atualizar() {
             if (dados[i][10] == usuarioLogado[0][0]){
                 src = dados[i][3];
                     console.log("teste");
-                document.getElementById("gerar").innerHTML += "<div class=card-externo id="+i+">\n\
+                document.getElementById("cards").innerHTML += "<div class=card-externo id="+i+">\n\
                                <div class=card-externo>\n\
                                 <div class=card-interno>\n\
                                   <div>\n\
@@ -45,7 +45,6 @@ function inserirValores(){
                 document.getElementById("input-cidade").value = dados[i][6];
                 document.getElementById("input-bairro").value = dados[i][7];
                 document.getElementById("input-cpf").value = dados[i][8];    
-            
         }
 }
 usuarios = [];
@@ -73,10 +72,9 @@ function atualizarDados(){
 
     usuarios.push(aux);
     window.localStorage.setItem("dados_usuarios", JSON.stringify(usuarios));
+    console.log(JSON.stringify(usuarios))
     var imagem = document.getElementById("upload").files[0].name;
     window.localStorage.setItem("dados_produtos", JSON.stringify(imagem));
-
-  
 }
 
 window.onload = function() {
