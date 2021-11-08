@@ -43,13 +43,13 @@
         <div class="cards-gerar" id="cards-gerar">
             <div class="card-alinhar">
                 <div class="card-externo">
-                    <div class="card-interno">
+                    <div id="arte1" class="card-interno">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <img class="img-cadastro" src="../imagens/teste.jpg" alt="">
                         </div>
 
                         <div class="infos" id="id_infos">
-                            <h2 class="titulo-arte">dados[i][0]</h2>
+                            <h2 class="titulo-arte">Nome</h2>
                             <hr class="separador-card">
 
                             <h2 class="descricao-titulo">Sobre</h2>
@@ -60,6 +60,19 @@
                             </div>
 
                             <h2 class="preco">R$ 1.000</h2>
+                                <div class="talvez-deletar-arte1" id="talvez-deletar1">
+                                    <button onclick="talvez_deletar_arte1()">Deletar arte</button>
+                                </div>
+                            <div id ="delet1" style="display: none">
+                                <p id="descricao-deletar1" class="descricao-card">Tem certeza que deseja deletar?
+                                </p>
+                                <div class="deletar-arte1" id="deletar1">
+                                    <button onclick="clicar_botao1()">Sim</button>
+                                </div>
+                                <div class="nao-deletar-arte1" id="nao-deletar1">
+                                    <button onclick="nao_clicar_botao1()">Não</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -69,13 +82,13 @@
             </div>
             <div class="card-alinhar">
                 <div class="card-externo">
-                    <div class="card-interno">
+                    <div id="arte2" class="card-interno">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <img class="img-cadastro" src="../imagens/teste.jpg" alt="">
                         </div>
 
                         <div class="infos" id="id_infos">
-                            <h2 class="titulo-arte">dados[i][0]</h2>
+                            <h2 class="titulo-arte">Nome</h2>
                             <hr class="separador-card">
 
                             <h2 class="descricao-titulo">Sobre</h2>
@@ -85,8 +98,22 @@
                                 </p>
                             </div>
 
-                            <h2 class="preco">R$ 1.000</h2>
+                            <h2 class="preco">R$ 2.000</h2>
+                            <div class="talvez-deletar-arte2" id="talvez-deletar2">
+                                <button onclick="talvez_deletar_arte2()">Deletar arte</button>
+                            </div>
+                            <div id="delet2" style="display: none">
+                                <p id="descricao-deletar2" class="descricao-card">Tem certeza que deseja deletar?
+                                </p>
+                                <div class="deletar-arte2" id="deletar2">
+                                    <button onclick="clicar_botao2()">Sim</button>
+                                </div>
+                                <div class="nao-deletar-arte2" id="nao-deletar2">
+                                    <button onclick="nao_clicar_botao2()">Não</button>
+                                </div>
                         </div>
+                        </div>
+ 
                     </div>
 
                     <div class="box-adicionar-carrinho">
@@ -142,10 +169,10 @@
 
                     <label class="aviso-cartao">Nome completo</label>
                     <span class="aviso-cartao2">como está impresso no cartão</span>
-                    <input class="input-cartao" type="number">
+                    <input class="input-cartao" type="text">
 
                     <label class="aviso-cartao">Validade</label>
-                    <input class="input-cartao-menor" type="number">
+                    <input id="cartao" class="input-cartao-menor" type="number">
 
                     <label class="aviso-cartao">Código de segurança</label>
                     <input class="input-cartao-menor" type="number">
