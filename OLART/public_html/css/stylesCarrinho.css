@@ -20,6 +20,21 @@ td {
     /* background-color: aqua; */
 }
 
+.botao-delet {
+    font-size:15px;
+    font-family:Arial;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#fff;
+    border-color:#2C2E43;
+    background-color:#2C2E43;
+    border-top-left-radius:17px;
+    border-top-right-radius:17px;
+    border-bottom-left-radius:17px;
+    border-bottom-right-radius:17px;
+  }
+
 .botao-pagamento {
     display: flex;
     border-radius: 20px;
@@ -208,3 +223,4 @@ form {
     display: flex;
     flex-direction: column
 }
+
