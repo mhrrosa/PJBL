@@ -31,6 +31,6 @@ function cartao() {
         return false;
     }
     boxPix.display = "none";
-    boxBoleto.display = "none";
+    boxBoleto.display = "none"
 
 }
