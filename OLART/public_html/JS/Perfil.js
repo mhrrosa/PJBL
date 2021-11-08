@@ -1,11 +1,13 @@
 function atualizar() {
     src = "";
+
     dados = JSON.parse(window.localStorage.getItem("dados_produtos"));
     usuarioLogado = JSON.parse(window.localStorage.getItem("usuarioLogado"));
         for (var i = 0; i < dados.length; i++) {
             if (dados[i][10] == usuarioLogado[0][0]){
                 src = dados[i][3];
-                document.getElementById("cards").innerHTML += "<div class=card-externo id="+i+">\n\
+                    console.log("teste");
+                document.getElementById("gerar").innerHTML += "<div class=card-externo id="+i+">\n\
                                <div class=card-externo>\n\
                                 <div class=card-interno>\n\
                                   <div>\n\
