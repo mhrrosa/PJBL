@@ -78,9 +78,7 @@ function atualizarDados(){
 
   
 }
-function chamarpag() {
-    window.open('../paginas/CadastrarProduto.html');
-}
+
 window.onload = function() {
     atualizar();
     inserirValores();
