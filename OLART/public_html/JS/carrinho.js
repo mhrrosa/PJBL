@@ -52,6 +52,7 @@ function dataMask(value) {
     const maskedValue = number
       .replace(/\D/g,"")
       .replace(/(\d{2})(\d)/,'$1/$2')
+      console.log(maskedValue.substring(0,5))
       return maskedValue.substring(0,5);
 }
 
