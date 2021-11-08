@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/styleBase.css">
     <link rel="stylesheet" href="../css/OlartPerfil.css">
     <link rel="stylesheet" href="../css/stylecards.css">
+    <script type="text/javascript" src="../JS/Perfil.js"></script>
+    <script type="text/javascript" src="../JS/Logout.js"></script>
 
     <title>Olart</title>
 </head>
@@ -28,9 +30,9 @@
             <ul id="menu" role="menu">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="home.html">Carrinho</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
                 <li><a href="OlartPerfil.html">Perfil</a></li>
-                <li><a href="../Index.html">Login</a></li>
+                <li><a href="../Index.html" onclick="logout()">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -62,43 +64,53 @@
                     <table>
                         <tr>
                             <td class="titulo_td"><label class="titulo">Nome:</label></td>
-                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                            <td class="sobre_td"><input class="input-editar" type="text" id="input-name"></td>
                         </tr>
 
                         <tr>
                             <td class="titulo_td"><label class="titulo">Sobrenome: </label></td>
-                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                            <td class="sobre_td"><input class="input-editar" type="text" id="input-sobrenome"></td>
                         </tr>
 
                         <tr>
                             <td class="titulo_td"><label class="titulo">E-mail: </label></td>
-                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                            <td class="sobre_td"><input class="input-editar" type="email" id="input-email"></td>
+                        </tr>
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">Telefone: </label></td>
+                            <td class="sobre_td"><input class="input-editar" type="number" id="input-telefone"></td>
                         </tr>
                         <tr>
                             <td class="titulo_td"><label class="titulo">Usuário: </label></td>
-                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                            <td class="sobre_td"><input class="input-editar" type="text" id="input-usuario"></td>
                         </tr>
 
                         <tr>
                             <td class="titulo_td"><label class="titulo">Senha: </label></td>
-                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                            <td class="sobre_td"><input class="input-editar" type="password" id="input-senha"></td>
                         </tr>
 
                         <tr>
                             <td class="titulo_td"><label class="titulo">Cidade: </label></td>
-                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                            <td class="sobre_td"><input class="input-editar" type="text" id="input-cidade"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="titulo_td"><label class="titulo">Bairro: </label></td>
+                            <td class="sobre_td"><input class="input-editar" type="text" id="input-bairro"></td>
                         </tr>
 
                         <tr>
                             <td class="titulo_td"><label class="titulo">CPF: </label></td>
-                            <td class="sobre_td"><label class="descricao">Pegar dado do cadastro</label></td>
+                            <td class="sobre_td"><input class="input-editar" type="number" id="input-cpf"></td>
                         </tr>
 
                         <tr>
-                            <td class="teste" colspan="2"><button class="editar_info" type="text">Editar informações.</button></td>
+                            <td class="teste" colspan="2"><button class="editar_info" type="text" onclick="atualizarDados()">Editar informações.</button></td>
                         </tr>
                     </table>
                 </div>
+
             </div>
 
             <div class="box-titulo-pagina">
@@ -106,82 +118,11 @@
                 <hr class="divisor-titulo">
             </div>
 
-            <div class="cards-gerar">
-
-
-                <div class="card-alinhar">
-                    <div class="card-externo">
-                        <div class="card-interno">
-
-                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="../imagens/teste.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../imagens/teste.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../imagens/teste.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="infos">
-                                <h2 class="titulo-arte">Nome da arte</h2>
-                                <hr class="separador-card">
-
-                                <h2 class="descricao-titulo">Sobre</h2>
-
-                                <div class="box-descricao">
-                                    <p class="descricao-card">A arte é uma representação
-                                    </p>
-                                </div>
-
-                                <h2 class="preco">R$ 1.000</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-alinhar">
-                    <div class="card-externo">
-                        <div class="card-interno">
-
-                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="../imagens/teste.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../imagens/teste.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../imagens/teste.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="infos">
-                                <h2 class="titulo-arte">Nome da arte</h2>
-                                <hr class="separador-card">
-
-                                <h2 class="descricao-titulo">Sobre</h2>
-
-                                <div class="box-descricao">
-                                    <p class="descricao-card">A arte é uma representação
-                                    </p>
-                                </div>
-
-                                <h2 class="preco">R$ 1.000</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="cards-gerar" id="cards">
 
             </div>
 
-            <button class="editar_info" type="text"><a class="a" href="CadastrarProduto.html">Adicionar Arte</a></button>
+            <button class="editar_info" type="text"><a class="a" onclick="chamarpag()">Adicionar Arte</a></button>
         </div>
     </main>
 

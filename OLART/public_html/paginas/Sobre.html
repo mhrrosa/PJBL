@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../css/styleSobre.css">
     <link rel="stylesheet" href="../css/styleBase.css">
+    <script type="text/javascript" src="../JS/Logout.js"></script>
 </head>
 
 <body>
@@ -17,14 +18,14 @@
         <img class="logo" src="../imagens/Logo-Olart.png" alt="">
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-        <span id="hamburger"></span>
-      </button>
+                <span id="hamburger"></span>
+            </button>
             <ul id="menu" role="menu">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="home.html">Carrinho</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
                 <li><a href="OlartPerfil.html">Perfil</a></li>
-                <li><a href="../Index.html">Login</a></li>
+                <li><a href="../Index.html" onclick="logout()">Logout</a></li>
             </ul>
         </nav>
     </header>

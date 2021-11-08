@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="../css/styleBase.css">
-    <link rel="stylesheet" href="../css/styleCadastro.css">
+    <link rel="stylesheet" href="../css/styleCadastroProduto.css">
     <script type="text/javascript" src="../JS/CadastrarProduto.js"></script>
+    <script type="text/javascript" src="../JS/Logout.js"></script>
     <title>Olart</title>
 </head>
 
@@ -23,28 +23,28 @@
             <ul id="menu" role="menu">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="home.html">Carrinho</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
                 <li><a href="OlartPerfil.html">Perfil</a></li>
-                <li><a href="../Index.html">Login</a></li>
+                <li><a href="../Index.html" onclick="logout()">Logout</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
         <form>
             <div class="all">
                 <div class="display-dados">
                     <div class="dados-produto">
-
-                        <hr>
-                        <h1 class="titulo">Informações do Produto</h1>
-                        <hr>
+                        <div class="box-titulo-pagina">
+                            <hr class="divisor-titulo">
+                            <h1 class="titulo">Informações do Produto</h1>
+                            <hr class="divisor-titulo">
+                        </div>
 
                         <table>
                             <tr>
                                 <td><label class="title">Nome da arte</label></td>
-                                <td><input required maxlength="20" placeholder="Ex. O Grito" type="text" id="inputTitle"></td>
+                                <td><input required maxlength="20" placeholder="Ex. O Grito" type="text" id="inputTitle" value=""></td>
                             </tr>
 
                             <tr>
@@ -54,7 +54,7 @@
 
                             <tr>
                                 <td><label class="title">Preço</label></td>
-                                <td><input required placeholder="Ex. 1000" type="number" id="inputPreco"></td>
+                                <td><input max="5000" required placeholder="R$00,00" type="number" id="inputPreco" value=""></td>
                             </tr>
 
                             <tr>
@@ -62,7 +62,13 @@
                                     <label class="title">Adicionar imagens<br></label>
                                     <span>Faça o upload de até 3 imagens nos formatos JPEG ou PNG.</span>
                                 </td>
-                                <td><img class=" imgUpload " src="../imagens/imgUpload.png "><input multiple accept='image/*' class="fodase" type="file" id="upload" /></td>
+                                <td><img class=" imgUpload " src="../imagens/imgUpload.png ">
+
+                                    <label class="custom-file-upload">Faça o upload de sua foto clicando aqui ! 
+                                        <input multiple accept='image/*'
+                                        class="fodase" type="file" id="upload" />
+                                    </label>
+                                </td>
                             </tr>
 
 
@@ -102,12 +108,12 @@
 
                             <tr>
                                 <td><label class="title">Cidade</label></td>
-                                <td><input required placeholder="Ex. Curitiba" type="text" id="inputCidade"></td>
+                                <td><input required placeholder="Ex. Curitiba" type="text" id="inputCidade" value=""></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">CEP</label></td>
-                                <td><input required maxlength="4" placeholder="Ex. 888888888" type="number" id="inputCep"></td>
+                                <td><input required maxlength="4" placeholder="Ex. 888888888" type="number" id="inputCep" value=""></td>
                             </tr>
 
 
@@ -115,25 +121,27 @@
                     </div>
 
                     <div class="dados-contato">
-                        <hr>
-                        <h1 class="titulo">Informações para contato</h1>
-                        <hr>
+                        <div class="box-titulo-pagina">
+                            <hr class="divisor-titulo">
+                            <h1 class="titulo">Informações para contato</h1>
+                            <hr class="divisor-titulo">
+                        </div>
 
 
                         <table>
                             <tr>
                                 <td><label class="title">Nome</label></td>
-                                <td><input maxlength="35" required type="text" id="inputNomectt"></td>
+                                <td><input maxlength="35" required type="text" placeholder="Ex. George" id="inputNomectt" value=""></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">E-mail</label></td>
-                                <td><input maxlength="38" required placeholder="Ex. user@hotmail.com" type="email" id="inputEmailctt"></td>
+                                <td><input maxlength="38" required placeholder="Ex. user@email.com" type="email" id="inputEmailctt" value=""></td>
                             </tr>
 
                             <tr>
                                 <td><label class="title">Telefone</label></td>
-                                <td><input maxlength="11" placeholder="Ex. (42) 9 9999-9999" required type="number" id="inputTelefonectt"></td>
+                                <td><input maxlength="11" placeholder="Ex. (42) 9 9999-9999" required type="number" id="inputTelefonectt" value=""></td>
                             </tr>
 
 
@@ -145,8 +153,6 @@
             <button class="botaoMaiorAzul" onclick="cadastrar()">Publicar</button>
         </form>
     </main>
-
-
 
     <footer>
         <div>

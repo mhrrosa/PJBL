@@ -9,16 +9,17 @@
 
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet" href="../css/styleBase.css">
     <link rel="stylesheet" href="../css/stylehome.css">
     <script type="text/javascript" src="../JS/Home.js"></script>
+    <script type="text/javascript" src="../JS/Logout.js"></script>
 
     <title>Olart</title>
 </head>
 
 <body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <header id="header">
         <img class="logo" src="../imagens/Logo-Olart.png" alt="">
         <nav id="nav">
@@ -28,64 +29,70 @@
             <ul id="menu" role="menu">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="home.html">Carrinho</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
                 <li><a href="OlartPerfil.html">Perfil</a></li>
-                <li><a href="../Index.html">Login</a></li>
+                <li><a href="../Index.html" onclick="logout()">Logout</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
+
         <div class="box-titulo-pagina">
             <h1 class="titulo-pagina">Artes postadas</h1>
             <hr class="divisor-titulo">
         </div>
 
 
-        <div class="cards-gerar" id="cards-gerar">
+        <!-- <div class="cards-gerar" id="cards-gerar">
+
+
+
             <div class="card-alinhar">
                 <div class="card-externo">
                     <div class="card-interno">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <img class="img-cadastro" src="../imagens/teste.jpg" alt="">
+                            <img class="img-cadastro" src="../imagens/artes/teste.png">
                         </div>
 
-                        <div class="infos" id="id_infos">
-                            <h2 class="titulo-arte">dados[i][0]</h2>
-                            <hr class="separador-card">
+                        <div class=" infos " id="id_infos ">
+                            <h2 class="titulo-arte ">dados[i][0]</h2>
+                            <hr class="separador-card ">
 
-                            <h2 class="descricao-titulo">Sobre</h2>
+                            <h2 class="descricao-titulo ">Sobre</h2>
 
-                            <div class="box-descricao">
-                                <p class="descricao-card">A arte é uma representação
-                                </p>
+                            <div class="box-descricao ">
+                                <p class="descricao-card ">A arte é uma representação</p>
                             </div>
 
-                            <h2 class="preco">R$ 1.000</h2>
+                            <h2 class="preco ">R$ 1.000</h2>
                         </div>
                     </div>
 
-                    <div class="box-adicionar-carrinho">
-                        <button class="adicionar-carrinho">
-                            <img class="carrinho" src="../imagens/carrinho.png" alt="">
+                    <div class="box-adicionar-carrinho ">
+                        <button class="adicionar-carrinho ">
+                            <img class="carrinho " src="../imagens/carrinho.png " alt=" ">
                             Adicionar ao carrinho
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="cards-gerar" id="teste">
 
+
+
+
+        </div> -->
+
+        <div class="cards-gerar" id="gerar">
         </div>
     </main>
 
 
-    <footer class="footer">
+    <footer class=" footer ">
         <div>
-            <span class="copyright">©copyright OLART 2021</span>
+            <span class="copyright ">©copyright OLART 2021</span>
         </div>
     </footer>
-    <script src="../JS/OlartBase.js"></script>
+    <script src="../JS/OlartBase.js "></script>
 </body>
 
 </html>

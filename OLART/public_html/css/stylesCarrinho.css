@@ -1,0 +1,210 @@
+.box-pagamento {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    padding: 0;
+    height: fit-content;
+}
+
+.escolha-pagamento {
+    width: 200px;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.botao-pagamento {
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+    width: 200px;
+    margin: 5px 5px 5px 5px;
+    height: 130px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #2C2E43;
+    transition: all 0.5s;
+}
+
+.botao-pagamento:hover {
+    background-color: #2C2E43;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.img-forma-pagamento {
+    width: 100px;
+    margin: 15px;
+}
+
+.card-externo {
+    height: 190px;
+}
+
+.cards-gerar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.total-externo {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.total-interno {
+    display: flex;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.valor-total {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.soma-total {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-pix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.aviso-pix {
+    color: #2C2E43;
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.qrCode-dica {
+    display: flex;
+}
+
+.box-cartao {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.box-cartao-externa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.aviso-cartao {
+    font-size: 15px;
+    color: #2f2f2f;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.input-cartao {
+    margin-bottom: 20px;
+    width: 350px;
+    padding: 7px;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid #2f2f2f;
+    height: 20px;
+}
+
+.input-cartao-menor {
+    height: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 7px;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid #2f2f2f;
+}
+
+.aviso-cartao2 {
+    font-size: 12.5px;
+    color: #2f2f2f;
+}
+
+.botao-comprar {
+    margin-top: 80px;
+    background-color: #2C2E43;
+    padding: 20px;
+    width: 400px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.botao-comprar:hover {
+    cursor: pointer;
+}
+
+.input-cartao:focus {
+    outline: 0;
+}
+
+.box-boleto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aviso-boleto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 440px;
+    height: 130px;
+}
+
+.avisos-boleto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-aviso {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-color: #d3d1bc;
+    padding: 10px;
+    border-radius: 100%;
+    filter: invert(100%);
+}
+
+form {
+    display: flex;
+    flex-direction: column
+}

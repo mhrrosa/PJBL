@@ -1,9 +1,11 @@
-/* global usuarios */
+/* global produtos */
 
-usuarios = [];
+produtos = [];
 
 function cadastrar() {
     aux = [];
+    usuarioLogado = JSON.parse(window.localStorage.getItem("usuarioLogado"));
+
     var nomeProduto = document.getElementById("inputTitle").value;
     var descricao = document.getElementById("textareaDescricao").value;
     var preco = document.getElementById("inputPreco").value;
@@ -17,9 +19,6 @@ function cadastrar() {
 
 
 
-
-
-
     aux.push(nomeProduto);
     aux.push(descricao);
     aux.push(preco);
@@ -30,9 +29,11 @@ function cadastrar() {
     aux.push(nomectt);
     aux.push(emailctt);
     aux.push(telefonectt);
+    aux.push(usuarioLogado[0][0]);
 
-    usuarios.push(aux);
-    window.localStorage.setItem("dados_produtos", JSON.stringify(usuarios));
-
-    return usuarios;
+    produtos.push(aux);
+    console.log(produtos);
+    window.localStorage.setItem("dados_produtos", JSON.stringify(produtos));
+    window.open('../paginas/home.html');
+    return produtos;
 }
