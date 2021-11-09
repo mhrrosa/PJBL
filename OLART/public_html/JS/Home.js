@@ -56,7 +56,7 @@ var count = "";
 var artes = [
     [1, "A Noite Estrelada", "A pintura retrata a paisagem da janela do quarto do artista Van Gogh enquanto esteve no hospício de Saint-Rémy-de-Provence, sendo considerada uma das obras mais significativas do artista holandês.", "50Mi"],
 
-    [2, "Monalisa", "Mona Lisa também conhecida como A Gioconda ou ainda Mona Lisa del Giocondo é a mais notável e conhecida obra de Leonardo da Vinci, um dos mais eminentes homens do Renascimento italiano.", "790Mi"],
+    [2, "Mona Lisa", "Mona Lisa também conhecida como A Gioconda ou ainda Mona Lisa del Giocondo é a mais notável e conhecida obra de Leonardo da Vinci, um dos mais eminentes homens do Renascimento italiano.", "790Mi"],
 
     [3, "O grito", "O Grito é uma série de quatro pinturas do norueguês Edvard Munch, 1893. A obra representa uma figura andrógina num momento de profunda angústia e desespero. O plano de fundo é a doca do fiorde de Oslo ao pôr do sol", "120Mi"],
 
