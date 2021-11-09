@@ -1,8 +1,8 @@
 function atualizar() {
-   
+
     src = "";
     dados = JSON.parse(window.localStorage.getItem("dados_produtos"));
-    try{
+    try {
         for (var i = 0; i < dados.length; i++) {
             src = dados[i][3];
             document.getElementById("gerar").innerHTML += "<div class=card-externo id=" + i + ">\n\
@@ -32,9 +32,9 @@ function atualizar() {
                 </div>\n\
             </div>\n\
                             ";
-           }
-    }catch(error){
-        
+        }
+    } catch (error) {
+
     }
 
 }
@@ -61,28 +61,28 @@ var artes = [
     [3, "O grito", "O Grito é uma série de quatro pinturas do norueguês Edvard Munch, 1893. A obra representa uma figura andrógina num momento de profunda angústia e desespero. O plano de fundo é a doca do fiorde de Oslo ao pôr do sol", "120Mi"],
 
     [4, "Abaporu", "Abaporu é uma pintura a óleo da artista brasileira Tarsila do Amaral. É uma das principais obras do período antropofágico do movimento modernista no Brasil.", "40Mi"]
-    ];
+];
 
 function gerarCardDinamico() {
 
 
     for (let i = 0; i < artes.length; i++) {
 
-        
+
         count += '<div class=card-alinhar>';
         count += '<div class=card-externo>';
         count += '<div class=card-interno>';
         count += '<div class=carousel slide>';
-        count += '<img class=img-cadastro src=../imagens/artes/' + i+'.png' + ' > ';
+        count += '<img class=img-cadastro src=../imagens/artes/' + i + '.png' + ' > ';
         count += '</div>';
         count += '<div class=infos id="id_infos">';
         count += '<h2 class=titulo-arte">' + artes[i][1] + '</h2>';
         count += '<hr class=separador-card>';
-        count += '<h2 class=descricao-titulo> descricao </h2>';
+        count += '<h2 class=descricao-titulo> sobre </h2>';
         count += '<div class=box-descricao>';
-        count += '<p class=descricao-card>'+artes[i][2]+'</p>';
+        count += '<p class=descricao-card>' + artes[i][2] + '</p>';
         count += '</div>';
-        count += '<h2 class=preco>'+artes[i][3]+'</h2>';
+        count += '<h2 class=preco>' + artes[i][3] + '</h2>';
         count += '</div>';
         count += '</div>';
         count += '<div class=box-adicionar-carrinho>';
