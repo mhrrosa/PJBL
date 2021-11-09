@@ -3,12 +3,12 @@ function atualizar() {
 
     dados = JSON.parse(window.localStorage.getItem("dados_produtos"));
     usuarioLogado = JSON.parse(window.localStorage.getItem("usuarioLogado"));
-    try{
+    try {
         for (var i = 0; i < dados.length; i++) {
-            if (dados[i][10] == usuarioLogado[0][0]){
+            if (dados[i][10] == usuarioLogado[0][0]) {
                 src = dados[i][3];
-                    console.log("teste");
-                document.getElementById("cards").innerHTML += "<div class=card-externo id="+i+">\n\
+                console.log("teste");
+                document.getElementById("cards").innerHTML += "<div class=card-externo id=" + i + ">\n\
                                <div class=card-externo>\n\
                                 <div class=card-interno>\n\
                                   <div>\n\
@@ -30,20 +30,20 @@ function atualizar() {
                     </div>\n\
                 </div>\n\
                                 ";
-                
+
             }
         }
-    }catch(error){
-        
+    } catch (error) {
+
     }
 }
 
-$(function(){
-    $('#upload').change(function(){
+$(function() {
+    $('#upload').change(function() {
         const file = $(this)[0].files[0]
         const fileReader = new FileReader()
-        fileReader.onloadend = function(){
-           $('#img').attr('src', fileReader.result)
+        fileReader.onloadend = function() {
+            $('#img').attr('src', fileReader.result)
             document.getElementById('upload').remove()
             document.getElementsByClassName('imagem')[0].remove()
         }
@@ -51,22 +51,23 @@ $(function(){
     })
 })
 
-function inserirValores(){
-     dados = JSON.parse(window.localStorage.getItem("dados_usuarios"));   
-     for (var i = 0; i < dados.length; i++) {
-                document.getElementById("input-name").value = dados[i][0];
-                document.getElementById("input-sobrenome").value = dados[i][1];
-                document.getElementById("input-email").value = dados[i][2];
-                document.getElementById("input-telefone").value = dados[i][3];
-                document.getElementById("input-usuario").value = dados[i][4];
-                document.getElementById("input-senha").value = dados[i][5];
-                document.getElementById("input-cidade").value = dados[i][6];
-                document.getElementById("input-bairro").value = dados[i][7];
-                document.getElementById("input-cpf").value = dados[i][8];    
-        }
+function inserirValores() {
+    dados = JSON.parse(window.localStorage.getItem("dados_usuarios"));
+    for (var i = 0; i < dados.length; i++) {
+        document.getElementById("input-name").value = dados[i][0];
+        document.getElementById("input-sobrenome").value = dados[i][1];
+        document.getElementById("input-email").value = dados[i][2];
+        document.getElementById("input-telefone").value = dados[i][3];
+        document.getElementById("input-usuario").value = dados[i][4];
+        document.getElementById("input-senha").value = dados[i][5];
+        document.getElementById("input-cidade").value = dados[i][6];
+        document.getElementById("input-bairro").value = dados[i][7];
+        document.getElementById("input-cpf").value = dados[i][8];
+    }
 }
 usuarios = [];
-function atualizarDados(){
+
+function atualizarDados() {
     aux = [];
     var nome = document.getElementById("input-name").value;
     var sobrenome = document.getElementById("input-sobrenome").value;
