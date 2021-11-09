@@ -3,6 +3,7 @@ function atualizar() {
 
     dados = JSON.parse(window.localStorage.getItem("dados_produtos"));
     usuarioLogado = JSON.parse(window.localStorage.getItem("usuarioLogado"));
+    try{
         for (var i = 0; i < dados.length; i++) {
             if (dados[i][10] == usuarioLogado[0][0]){
                 src = dados[i][3];
@@ -29,9 +30,12 @@ function atualizar() {
                     </div>\n\
                 </div>\n\
                                 ";
-                console.log(i);
+                
             }
         }
+    }catch(error){
+        
+    }
 }
 function inserirValores(){
      dados = JSON.parse(window.localStorage.getItem("dados_usuarios"));   
