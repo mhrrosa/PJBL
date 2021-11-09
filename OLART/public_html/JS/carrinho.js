@@ -2,7 +2,7 @@ var boxCartao = document.getElementById("cartao").style;
 var boxPix = document.getElementById("pix").style;
 var boxBoleto = document.getElementById("boleto").style;
 var valores = Object.values(document.getElementsByClassName("preco")).map(e => e.innerHTML).reduce((a, c) => a + parseFloat(c.replaceAll("R$ ", "").replaceAll(".", "").replaceAll(",", ".")), 0)
-document.getElementsByClassName("soma-total")[0].innerHTML = formatar(valores)
+document.getElementsByClassName("soma-total")[0].innerHTML = formatar(valores);
 
 var arte1 = "existe"
 var arte2 = "existe"
