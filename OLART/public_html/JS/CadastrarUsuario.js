@@ -32,12 +32,8 @@ function cadastrar() {
         aux.push(bairro);
         aux.push(cpf);
 
-
         usuarios.push(aux);
         window.localStorage.setItem("dados_usuarios", JSON.stringify(usuarios));
         window.open('../index.html','_self');
     }
-
-
-   
 }
