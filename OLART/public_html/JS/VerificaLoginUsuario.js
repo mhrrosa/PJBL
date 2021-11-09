@@ -16,7 +16,7 @@ function VerificaLogin(){
              aux.push(Senha);
              usuarioLogado.push(aux);
              window.localStorage.setItem("usuarioLogado", JSON.stringify(usuarioLogado));
-             window.open('paginas/home.html');
+             window.open('paginas/home.html','_self')
         }
         else{
             alert('Login ou Senha invalidos');

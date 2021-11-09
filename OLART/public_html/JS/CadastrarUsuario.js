@@ -13,9 +13,6 @@ function cadastrar() {
     var cidade = document.getElementById("inputCidade").value;
     var bairro = document.getElementById("inputBairro").value;
     var cpf = document.getElementById("inputCpf").value;
-    
-
-
 
     aux.push(nome);
     aux.push(sobrenome);
@@ -27,8 +24,7 @@ function cadastrar() {
     aux.push(bairro);
     aux.push(cpf);
 
-
     usuarios.push(aux);
     window.localStorage.setItem("dados_usuarios", JSON.stringify(usuarios));
-    window.open('../index.html');
+    window.open('../index.html','_self')
 }
